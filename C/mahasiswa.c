@@ -23,7 +23,9 @@ int main() {
         printf("1. Tambah Data\n");
         printf("2. Tampilkan Data\n");
         printf("3. Simpan CSV\n");
-        printf("4. Keluar\n");
+        printf("4. Cari Mahasiswa\n");
+        printf("5.Hapus Mahasiswa\n");
+        printf("6.Keluar\n");
         printf("Pilih: ");
         scanf("%d", &pilihan);
 
@@ -136,15 +138,83 @@ int main() {
 
     break;
 }
-            case 4:
-                printf("keluar dari program\n");
+            
+                case 4: {
+
+    char cariNim[20];
+    int ditemukan = 0;
+
+    printf("Masukkan NIM yang dicari: ");
+    scanf("%s", cariNim);
+
+    struct Mahasiswa *temp = head;
+
+    while(temp != NULL) {
+
+        if(strcmp(temp->nim, cariNim) == 0) {
+
+            printf("\nData Ditemukan\n");
+            printf("Nama  : %s\n", temp->nama);
+            printf("NIM   : %s\n", temp->nim);
+            printf("Nilai : %.2f\n", temp->akhir);
+            printf("Mutu  : %c\n", temp->mutu);
+
+            ditemukan = 1;
+        }
+
+        temp = temp->next;
+    }
+
+    if(ditemukan == 0) {
+        printf("Data tidak ditemukan\n");
+    }
+
+    break;
+}
+              
+            case 5: {
+
+    char hapusNim[20];
+
+    printf("Masukkan NIM yang dihapus: ");
+    scanf("%s", hapusNim);
+
+    struct Mahasiswa *temp = head;
+    struct Mahasiswa *prev = NULL;
+
+    while(temp != NULL) {
+
+        if(strcmp(temp->nim, hapusNim) == 0) {
+
+            if(prev == NULL) {
+                head = temp->next;
+            } else {
+                prev->next = temp->next;
+            }
+
+            free(temp);
+
+            printf("Data berhasil dihapus\n");
+
+            break;
+        }
+
+        prev = temp;
+        temp = temp->next;
+    }
+
+    break;
+}
+            case 6: {
+                printf("Keluar dari program\n");
                 break;
                 
+            }
             default:
                 printf("Pilihan tidak valid\n");
         }
 
-    } while(pilihan != 4);
+    } while(pilihan != 6);
 
     return 0;
 }
