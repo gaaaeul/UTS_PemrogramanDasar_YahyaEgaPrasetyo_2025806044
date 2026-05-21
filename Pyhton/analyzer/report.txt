@@ -1,0 +1,20 @@
+=== HASIL ANALISIS TEKS ===
+
+Jumlah baris: 3
+Jumlah kata: 22
+Jumlah huruf vokal: 56
+Jumlah huruf konsonan: 82
+
+5 Kata Terbanyak:
+di: 2
+teknologi: 1
+berkembang: 1
+sangat: 1
+cepat: 1
+
+Grafik Frekuensi:
+di ##
+teknologi #
+berkembang #
+sangat #
+cepat #

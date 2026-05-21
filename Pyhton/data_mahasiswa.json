@@ -1,38 +1,32 @@
 [
     {
-        "nama": "udin",
-        "nim": "2020806001",
-        "nilai_akhir": 84.5,
-        "mutu": "A"
-    },
-    {
-        "nama": "ujang",
-        "nim": "2021806005",
-        "nilai_akhir": 72.0,
+        "nama": "kurniawan",
+        "nim": "2021806055",
+        "nilai_akhir": 71.5,
         "mutu": "B"
     },
     {
-        "nama": "sucipto",
-        "nim": "2023806007",
-        "nilai_akhir": 68.5,
-        "mutu": "C"
+        "nama": "doni",
+        "nim": "2020806056",
+        "nilai_akhir": 86.25,
+        "mutu": "A"
     },
     {
         "nama": "asep",
-        "nim": "2020806018",
-        "nilai_akhir": 64.0,
+        "nim": "2021806057",
+        "nilai_akhir": 60.0,
         "mutu": "C"
     },
     {
-        "nama": "yanto",
-        "nim": "2022806004",
-        "nilai_akhir": 78.5,
-        "mutu": "B"
+        "nama": "ujang",
+        "nim": "2020806058",
+        "nilai_akhir": 87.5,
+        "mutu": "A"
     },
     {
-        "nama": "basuki",
-        "nim": "2021806008",
-        "nilai_akhir": 84.4,
-        "mutu": "A"
+        "nama": "dadang",
+        "nim": "2023806059",
+        "nilai_akhir": 77.5,
+        "mutu": "B"
     }
 ]
